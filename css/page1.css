@@ -7,7 +7,7 @@
 /* 最上方的導覽列 */
 
 body {
-    background-image: url(/02_王奕軒專題/img/bott.jpg);
+    background-image: url(../img/bott.jpg);
     /* background-position: center; */
     /* background-repeat: no-repeat; */
     background-size: contain;
