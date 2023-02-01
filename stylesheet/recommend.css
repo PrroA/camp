@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     overflow-x: hidden;
     background-image: url(../img/bott.jpg);
@@ -9,11 +15,7 @@ body h1 {
 }
 
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 /* 最上方的導覽列 */
 
@@ -70,7 +72,6 @@ nav li:hover {
 .inline-block-nav {
     text-align: center;
     font-size: 0;
-    /* 移除 <li> 之間的空隙 */
 }
 
 .inline-block-nav>li {
@@ -97,6 +98,7 @@ nav li:hover {
 }
 
 #container > div > img {
+    padding-left: 20px;
     border-radius: 10px;
     width: 45%;
     height: 100%;

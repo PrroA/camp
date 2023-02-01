@@ -101,6 +101,7 @@ hr {
 
 textarea {
     resize: none;
+    background-color: #fff0D4;
 }
 
 #people {
@@ -113,7 +114,9 @@ textarea {
 }
 
 input {
-    font-size: 1em;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #fff0D4;
 }
 
 #rent {
@@ -127,7 +130,8 @@ input {
 }
 
 #rent > table td{
-    width: 5em;
+    width: 8em;
+    padding-left: 20px;
 }
 
 #to-top {
@@ -173,9 +177,12 @@ input {
 }
 
 .btn button:hover  {
-    background-color: #0099CC;
+    background-color: #fff0D4;
     color: white;
     border-radius: 2rem;
+    transition-duration: 1s;
+    color: black;
+
   }
  
 

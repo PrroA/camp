@@ -69,10 +69,15 @@ nav li:hover {
 #content-container {
     max-width: 65rem;
     margin: 0 auto;
+    
 }
+
+#content-container 
 
 #banner {
     width: 100%;
+    height: 410px;
+    margin-top: 100px;
 }
 
 #content {
@@ -82,19 +87,21 @@ nav li:hover {
 }
 
 #sidebar {
-    width: 18rem;
-    height: 70vh;
+    width: 20rem;
 }
 
 #sidebar ul {
     list-style: none;
-    box-shadow: 0px 4px 5px -2px #211B1B;
+    box-shadow: 0px 4px 5px -2px #1b211d;
+
 }
 
 #sidebar li {
     text-align: center;
     line-height: 2em;
     border-bottom: 0.5px solid #211B1B;
+    font-size: 20px;
+    font-weight:800;
 }
 
 #sidebar a {
@@ -103,7 +110,7 @@ nav li:hover {
 
 #sidebar li:first-child {
     line-height: 3em;
-    background-color: #211B1B;
+    background-color: #ba8282;
     color: white;
 }
 
@@ -111,12 +118,17 @@ nav li:hover {
     cursor: pointer;
 }
 
+#sidebar li:not(:first-child):hover {
+    color: #ffffff;
+    background-color: #000000;
+}
+
 #products {
     flex-grow: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 
 .product {
@@ -126,12 +138,16 @@ nav li:hover {
     flex-direction: column;
 }
 
-.price {
-    align-self: flex-end;
+.product-name {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 100px;
 }
 
-.product .price1 {
-    padding-bottom: 60px;
+.price {
+    align-self: flex-end;
+    padding-right: 50px;
+    color: red;
 }
 
 .product :last-child {
@@ -142,6 +158,7 @@ nav li:hover {
 
 .product img {
     width: 100%;
+    margin: 20px;
 }
 
 .product button{
@@ -192,6 +209,15 @@ nav li:hover {
     width: 100%;
 }
 
+.electric img {
+    height: 284px;
+    padding-bottom: 2000px;
+}
+
+.product .electric_btn  button {
+    padding: 200px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -219,9 +245,11 @@ html {
 }
 
 .btn:hover  {
-    background-color: #0099CC;
+    background-color: #fff0D4;
     color: white;
     border-radius: 2rem;
+    transition-duration: 1s;
+    color: black;
   }
 
 

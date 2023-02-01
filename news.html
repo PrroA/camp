@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/news.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,6 +24,8 @@
         </ul>
     </nav>
     <div id="content-container">
+        <div data-aos="flip-up"
+        data-aos-duration="1500">
         <img src="./img/wpicon_img_23850.jpg" alt="" id="banner">
         <div id="main-container">
             <h1 id="title">這裡即將顯示最新新聞<br>不時也會有優惠即時消息</h1>
@@ -33,9 +37,10 @@
                         即日起,限時優惠<br>
                         全館販賣物65折
                     </div>
+
                 </div>
                 <div>
-                    <img src="./img/images.jpg" alt="">
+                    <img src="./img/1376632199-782005822.jpg.crdownload" alt="">
                     <div class="title">颱風警報</div>
                     <div class="content">
                         即日起7/1～7/29號<br>
@@ -43,29 +48,37 @@
                     </div>
                 </div>
                 <div>
-                    <img src="./img/Qr_code_wiktionary_link.svg.png" alt="">
+                    <img src="./img/vedfolnir-qrcode-1200x1200.jpg" alt="">
                     <div class="title">掃描QR Code</div>
                     <div class="content">
                         掃描QR Code<br>
                         領取優惠碼
                     </div>
                 </div>
+                </div>
             </div>
             <div class="news-block">
                 <img src="./img/sixed.jpg" alt="">
-                <div>
+                <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="500">
                     <div class="title">開放投影幕</div>
                     <div class="content">
                         可與身邊的人一邊享受露營<br>
                         順便一起團體享受前所未有的<br>
                         視聴饗宴。
                     </div>
-                    <div class="button">立即預約</div>
+                    <a href="./order.html"><div class="button">立即預約</div></a>
                 </div>
             </div>
-            <div class="news-block">
-                <img src="./img/six.jpg" alt="">
-                <div>
+            <div class="news-block col">
+
+                <img src="./img/Ons-Kamp-Vintage-Collection.jpg" alt="">
+                <div data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-offset="500"
+                data-aos-duration="2000">
                     <div class="title">及時小物</div>
                     <div class="content">
                         忘記帶沒關係<br>
@@ -73,15 +86,12 @@
                         的物品這裡應有盡有<br>
                         讓你的露營時光缺少麻煩
                     </div>
-                    <div class="button">來去購物</div>
+                    <a href="./menu.html"><div class="button">來去購物</div></a>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#">
-        <div id="to-top">
-            <img src="./img/up-arrow.png" alt="">
-        </div>
+      
         <a href="#">
             <div id="to-top">
                 <img src="./img/up-arrow.png" alt="">
@@ -111,4 +121,7 @@
     }, 10)
 })
     </script>
+    <script>
+        AOS.init();
+      </script>
 </body>

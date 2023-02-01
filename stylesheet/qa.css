@@ -75,6 +75,7 @@ nav li:hover {
 #content-container {
     max-width: 65rem;
     margin: 0 auto;
+    /* position: fixed; */
 }
 
 #banner {
@@ -100,7 +101,7 @@ nav li:hover {
 
 .question > div > span:first-child {
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .question > div > span:last-child {
@@ -109,16 +110,17 @@ nav li:hover {
 }
 
 .a-content {
-    margin-left: 1.2em;
+    margin-left: 5em;
     display: flex;
     align-items: baseline;
     overflow-y: hidden;
     max-height: 0;
     transition: max-height 1s;
+    color: red;
 }
 
 .question input:checked ~ .a-content {
-    max-height: 5em;
+    max-height: 4em;
 }
 
 .down-arrow {
@@ -127,7 +129,7 @@ nav li:hover {
 }
 
 .question input:checked + div .down-arrow {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 #to-top {
