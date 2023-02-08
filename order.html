@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheet/order.css">
 </head>
 
 <body>
     <nav class="top">
+        <i class="fa fa-bars" aria-hidden="true"></i>
         <a href="./index.html">
             <img src="./img/Index/Component 1.png" alt=""></a>
-        <ul class="flex-nav">
+        <ul class="flex-nav menu">
             <li><a href="./page1.html">帳篷目錄</a></li>
             <li><a href="./recommend.html">一日推薦</a></li>
             <li><a href="./menu.html">商品租借</a></li>
@@ -31,20 +35,20 @@
         </div>
         <div class="title">02.入住資料</div>
         <hr>
-        <div>姓名 <input type="text" placeholder="請輸入姓名"></div>
-        <div>電話 <input type="text" placeholder="請輸入電話"></div>
-        <div>信箱 <input type="text" placeholder="請輸入信箱"></div>
-        <div>備註留言 </div>
+        <div class="text">姓名 <input type="text" placeholder="請輸入姓名"></div>
+        <div class="text">電話 <input type="text" placeholder="請輸入電話"></div>
+        <div class="text">信箱 <input type="text" placeholder="請輸入信箱"></div>
+        <div class="text">備註留言 </div>
         <textarea cols="30" rows="10" placeholder="留下您的寶貴意見"></textarea>
         <div class="title">03.預約資料</div>
         <hr>
         <div id="people">
-            <div>成人 <input type="number"></div>
-            <div>小孩 <input type="number"></div>
+            <div class="text">成人 <input type="number" id="number" min="1" max="10"></div>
+            <div class="text">小孩 <input type="number" id="number" min="1" max="10"> </div>
         </div>
         <div id="rent">
             <div>租借商品</div>
-
+            <div>
             <table>
                 <tr>
                     <td><div>
@@ -95,6 +99,13 @@
     <div class="fin">
         <p> 本網站為緯育TibaMe前端工程師班第82期學員專題作品，本平台僅供學習、展示之用。參考資源: WILD KIDS LIFE</p>
     </div>
+    <script>
+        document.getElementById("number").addEventListener("input",function(event){
+           event.target.value = event.target.value.replace(/\-/g,""); 
+        });
+    </script>
 </body>
 
 </html>
+
+
