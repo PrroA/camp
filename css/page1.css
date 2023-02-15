@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-/* 最上方的導覽列 */
-
 body {
     background-image: url(../img/fff.jpg);
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    background-size: contain;
-    margin: 0;
 }
+/* 最上方的導覽列 */
 
 .top {
     width: 100%;
@@ -23,8 +18,18 @@ body {
     display: flex;
     position: fixed;
     border-bottom: 2px solid black;
-    z-index: 10;
+    z-index: 10;    
 }
+
+.top > .fa{
+    display: none;
+}
+
+/* .top > .fa:hover ~ ul{
+    left: 0;
+  } */
+
+
 
 .top img {
     margin-top: 20px;
@@ -73,6 +78,7 @@ nav li:hover {
 .inline-block-nav>li {
     display: inline-block;
 }
+
 
 /* 開始內容 */
 
@@ -398,4 +404,75 @@ footer {
 
 .carousel .bottom .indicator.activate {
     background-color: pink;
+}
+
+
+@media screen and (max-width: 414px) { 
+    html {
+        width: 100%;
+    }
+     body {
+        width: 100%;
+        /* opacity: .5; */
+    } 
+    .top {
+        width: 414px;
+         
+    }
+
+
+    .top nav ul {
+        width: 414px;
+    }
+
+    .top .menu{
+        display: block;
+        position: fixed;
+        left: -500px;
+        top: 94px;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        background-color: #6bcb42;
+        z-index: 10;
+        order: 2;
+        transition: .5s;
+        opacity: .9;
+        border: 1px solid black;
+      }
+
+      .top > .fa:hover ~ ul {
+        left: -40px;
+        /* display: block; */
+        /* border: 1px solid black; */
+    }
+      .top .fa .fa-bars {
+        float: left;
+        /* display: block; */
+      } 
+
+      .top .menu li{
+        margin-right: 0;
+        border: 1px solid black;
+      }
+    
+      .top .menu li:last-child{
+        border-bottom: 1px solid #991515;
+      }
+    
+      .top .menu a{
+        line-height: 60px;
+        padding-left: 50px;
+      }
+
+      nav a {
+        margin-left: 200px;
+      }
+
+      .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        content: "\f0c9";
+    }
+
+    .top > .fa{ 
+        display: block;
+    }
 }
