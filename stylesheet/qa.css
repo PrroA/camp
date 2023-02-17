@@ -83,7 +83,6 @@ nav li:hover {
 }
 
 #qa-container {
-   
     width: 100%;
     max-width: 40rem;
     margin: 0 auto;
@@ -96,7 +95,9 @@ nav li:hover {
 .question {
     display: block;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    box-shadow: #6bcb42;
+    /* background-color: #991515; */
 }
 
 .question > div > span:first-child {
@@ -120,7 +121,7 @@ nav li:hover {
 }
 
 .question input:checked ~ .a-content {
-    max-height: 4em;
+    max-height: 3em;
 }
 
 .down-arrow {
@@ -231,4 +232,38 @@ nav li:hover {
       nav a {
         margin-left: 200px;
       }
+
+
+      .a-content {
+        margin-top: 10px;
+        margin-left: 1em;
+        font-size: 1.3rem;
+        background-color: #ffffff;
+        color: rgb(159, 114, 114);
+    }
+
+    #qa-container {
+        padding-left: 15px;
+    }
+
+      #to-top {
+        opacity: .5;
+    }
+
+
+    footer {
+        line-height: 1.2;
+        border-bottom: 1px solid wheat;
+    }
+
+    footer p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fin {
+        height: 70px;
+        font-size: 10px;
+        text-align: center; 
+    }
     }

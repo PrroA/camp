@@ -475,4 +475,67 @@ footer {
     .top > .fa{ 
         display: block;
     }
+
+    .carousel {
+        width: 100%;
+    }
+    .banner1{
+        width: 100px;
+    }
+    .banner1_four li {
+        display: none;
+    }
+
+    .center {
+        display: block;
+    }
+
+    .center table {
+        width: 414px;
+        margin-left: 0;
+    }
+    
+    .center h1 {
+        font-size: 2em;
+        width: 414px;
+    }
+
+    .center ul li {
+        display: none;
+    } 
+
+    .room {
+        padding-left: 20px;
+    }
+    .room_img {
+        display:  none;
+    }
+
+    .room_h1  {
+        width: 414px;
+        text-align:center;
+        padding: 20px;
+    }
+
+    #to-top {
+        opacity: .5;
+    }
+
+
+    footer {
+        line-height: 1.2;
+        border-bottom: 1px solid wheat;
+    }
+
+    footer p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .fin {
+        height: 70px;
+        font-size: 10px;
+        text-align: center; 
+    }
+    
 }
