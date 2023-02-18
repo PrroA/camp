@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../img/fff.jpg);
+    /* background-image: url(../img/fff.jpg); */
 }
 /* 最上方的導覽列 */
 
@@ -143,9 +143,10 @@ main .banner1 ul li img {
 
 
 .center h1 {
+    display: block  ;
     width: 250px;
     padding-left: 50px;
-    text-align: center;
+    /* text-align: center; */
     margin-top: 20px;
 }
 
@@ -465,7 +466,7 @@ footer {
       }
 
       nav a {
-        margin-left: 200px;
+        margin-left: 150px;
       }
 
       .fa-navicon:before, .fa-reorder:before, .fa-bars:before {

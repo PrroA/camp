@@ -26,6 +26,8 @@
                 <li><a href="./order.html">線上預約</a></li>
             </ul>
         </nav>
+
+        
         <main>
             <!-- <div class="banner">   
                 <img src="/img/Index/botton_4.jpg" alt="">
@@ -238,7 +240,7 @@
               AOS.init();
              var zd = document.querySelector(".arrow");
              // 綁定點擊事件
-                 zd.addEventListener("click", function() {
+                zd.addEventListener("click", function() {
              let time = setInterval(function() {
              let top = pageYOffset;
              let step = Math.ceil(top/50);
@@ -246,7 +248,7 @@
              if(top==0) {
                  clearInterval(time);
              }
-         }, 10)
+         }, 300)
      })
          </script>
     </body>

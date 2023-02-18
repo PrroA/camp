@@ -71,6 +71,10 @@ nav li:hover {
     display: inline-block;
 }
 
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    display: none;
+}
+
 #container {
     width: 100%;
     /* max-width: 40rem; */
@@ -161,7 +165,7 @@ input {
         color: #0099CC; 
         /* 清除背景色 */
         /* background: transparent;  */
-        background-color: greenyellow;
+        /* background-color: greenyellow; */
         /* 边框样式、颜色、宽度 */
         border: 2px solid #0099CC;
         /* 给边框添加圆角 */
@@ -273,8 +277,12 @@ footer {
       }
 
       nav a {
-        margin-left: 200px;
+        margin-left: 150px;
       }
+
+      .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        display: block;
+    }
       .title {
         margin:  0  auto;
         font-size: 25px;
@@ -305,14 +313,25 @@ footer {
         font-size: 18px;
         padding-left: 15px;
     }
+    #to-top {
+        opacity: .5;
+    }
+
+
+    footer {
+        line-height: 1.2;
+        border-bottom: 1px solid wheat;
+    }
+
+    footer p {
+        font-size: 16px;
+        text-align: center;
+    }
 
     .fin {
         height: 70px;
         font-size: 10px;
-        text-align: center;
+        text-align: center; 
     }
-    
-    }
-
  
-    
+}

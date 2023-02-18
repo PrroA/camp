@@ -71,6 +71,10 @@ nav li:hover {
     display: inline-block;
 }
 
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    display: none;
+}
+
 #content-container {
     max-width: 65rem;
     margin: 0 auto;
@@ -342,8 +346,12 @@ html {
       }
 
       nav a {
-        margin-left: 200px;
+        margin-left: 150px;
       }
+
+      .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+        display: block;
+    }
 
       #sidebar  {
         width: 30em;
