@@ -147,15 +147,19 @@
         console.log('qqqq');
     })
 
-
+            let open = 0 ;
             function openMenu(){
-            let open = 0; // 關閉
+
+            
+           console.log(open);
             if(open == 0){
                 $(".top .menu").css("left", "-47px")
                 open = 1;
+                
             }else{
                 $(".top .menu i").css("left", "-500px")
                 open = 0;
+                
             }
             console.log(openMenu());
         }
