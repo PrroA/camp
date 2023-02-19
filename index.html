@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav class="top">
-        <i class="fa fa-bars " aria-hidden="true"  id="abc" onclick="openMenu()"></i>
+        <i class="fa fa-bars" aria-hidden="true"  id="abc" onclick="openMenu()"></i>
         <a href="./index.html">
            
             <img src="./img/Index/Component 1.png" alt=""></a>
@@ -142,12 +142,7 @@
     }, 1000)
 })
 
-    let x = document.getElementById('abc')
-    x.addEventListener('click' , function (e){
-        console.log('qqqq');
-    })
-
-            let open = 0 ;
+    let open = 0 ;
             function openMenu(){
 
             
@@ -157,9 +152,8 @@
                 open = 1;
                 
             }else{
-                $(".top .menu i").css("left", "-500px")
+                $(".top .menu").css("left", "-500px")
                 open = 0;
-                
             }
             // console.log(openMenu());
         }

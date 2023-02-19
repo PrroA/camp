@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="stylesheet/order.css">
     <script src="./jq/jquery-3.6.3.js" ></script>
+   
 </head>
 
 <body>
@@ -111,7 +113,7 @@
 
 // 網頁進度條
         window.addEventListener('scroll', () => {
-  moveBar('#e74c3c')
+            moveBar('#e74c3c')
 })
 
 // main code
@@ -135,19 +137,19 @@ let open = 0 ;
             function openMenu(){
 
             
-        //    console.log(open);
+           console.log(open);
             if(open == 0){
                 $(".top .menu").css("left", "-47px")
                 open = 1;
-                
+                console.log(open);
             }else{
-                $(".top .menu i").css("left", "-500px")
+                $(".top .menu").css("left", "-500px")
                 open = 0;
                 
             }
             // console.log(openMenu());
         }
-
+        
 
     </script>
     
