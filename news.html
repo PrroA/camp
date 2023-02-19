@@ -17,7 +17,7 @@
 
 <body>
     <nav class="top">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-bars " aria-hidden="true"  id="abc" onclick="openMenu()"></i>
         <a href="./index.html">
             <img src="./img/Index/Component 1.png" alt=""></a>
         <ul class="flex-nav menu">
@@ -128,6 +128,23 @@
         }
     }, 10)
 })
+
+let open = 0 ;
+            function openMenu(){
+
+            
+           console.log(open);
+            if(open == 0){
+                $(".top .menu").css("left", "-47px")
+                open = 1;
+                
+            }else{
+                $(".top .menu i").css("left", "-500px")
+                open = 0;
+                
+            }
+            console.log(openMenu());
+        }
     </script>
     <script>
         AOS.init();
