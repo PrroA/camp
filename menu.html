@@ -110,45 +110,10 @@
     </div>
 
     <script>
-        // const product = [{
-        //     id : 'id1' ,
-        //     img : './img/four.jpg ' ,
-        //     name : '睡袋' ,
-        //     price : 2000 ,
-            
-        // },
-        // {
-        //     id : 'id4' ,
-        //     img : './img/20200818174534209_2.JPG' ,
-        //     name : '露營椅' ,
-        //     price : 2000 ,
-        // },{
-        //     id : 'id2' ,
-        //     img : './img/五.jpg' ,
-        //     name : '雨衣' ,
-        //     price : 2000 ,
-        // },{
-        //     id : 'id3' ,
-        //     img : './img/1657529883.jpg' ,
-        //     name : '馬克杯' ,
-        //     price : 2000 ,
-        // },{
-        //     id : 'id1' ,
-        //     img : './img/seven.jpg' ,
-        //     name : '電暖爐' ,
-        //     price : 2000 ,
-        // },{
-        //     id : 'id1' ,
-        //     img : './img/three.jpg' ,
-        //     name : '枕頭' ,
-        //     price : 2000 ,
-        // }
-        // ]
-
+    
         function openCity(evt, setName) {
-            // console.log(evt);
-            console.log(setName);
-            var i, product, btn_choice;
+        
+            let i, product, btn_choice;
 
 
             product = document.getElementsByClassName("product");
@@ -157,28 +122,16 @@
                 product[i].style.display = "none";
                 // console.log(product[i]);
             }
-
-            // btn_choice = document.getElementsByClassName("btn_choice");
-            // for (i = 0; i < btn_choice.length; i++) {
-                // btn_choice[i].className = btn_choice[i].className.replace(" active", "");
-            // }
-                // console.log(document.getElementsByClassName(setName));
                 if(setName === 'product1'){
-                   
-                
-                  
-                    
-                  
                     document.getElementsByClassName(setName)[0].style.display = 'block';
                     document.getElementsByClassName(setName)[1].style.display = 'block';
                     document.getElementsByClassName(setName)[2].style.display = 'block';
                 }else {
                     document.getElementById(setName).style.display = "block";
                 }
-                // console.log(document.getElementById(setName));
-            //
-            // evt.currentTarget.className += " active";
-        }
+            }
+
+        //漢堡
 
         let open = 0 ;
             function openMenu(){
