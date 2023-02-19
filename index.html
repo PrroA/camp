@@ -8,6 +8,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -134,6 +136,18 @@
         }
     }, 10)
 })
+
+        function openMenu(){
+            let open = 0; // 關閉
+            if(open == 0){
+                $(".fa-bars").css(".top > .menu", "left: -47px")
+                open = 1;
+            }else{
+                $(".fa-bars").css(".top > .menu", "left: -500px")
+                open = 0;
+            }
+        }
+    
     </script>
 </body>
 </html>

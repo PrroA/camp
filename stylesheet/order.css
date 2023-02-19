@@ -75,6 +75,15 @@ nav li:hover {
     display: none;
 }
 
+.bar{
+    position: fixed;
+    top: 0;
+    width: 0.5%;
+    height: 4px;    
+    margin-top: 97px;
+}
+
+
 #container {
     width: 100%;
     /* max-width: 40rem; */

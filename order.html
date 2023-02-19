@@ -25,6 +25,8 @@
             <li><a href="./order.html">線上預約</a></li>
         </ul>
     </nav>
+
+    <div class="bar"></div>
     <div id="container">
         <h2>線上預約</h2>
         <div class="title">01.預約日期</div>
@@ -103,7 +105,34 @@
         document.getElementById("number").addEventListener("input",function(event){
            event.target.value = event.target.value.replace(/\-/g,""); 
         });
+
+
+
+// 網頁進度條
+        window.addEventListener('scroll', () => {
+  moveBar('#e74c3c')
+})
+
+// main code
+
+// 網頁進度條
+function moveBar(color = '#0984e3') {
+  let bar = document.querySelector('.bar')
+  let w =
+    Math.ceil((Math.round(window.pageYOffset) /
+      (document.body.scrollHeight - window.innerHeight)) *
+    100)
+  bar.style.width = w + '%'
+  bar.style.background = color
+}   
+    $('.fa fa-bars').on('click', function(e){
+            e.preventDefault();
+    $('body').toggleClass('fa fa-bars');
+});
+
+
     </script>
+    
 </body>
 
 </html>
