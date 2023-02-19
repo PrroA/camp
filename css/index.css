@@ -333,8 +333,8 @@
         border: 1px solid black;
       }
 
-      .top > .fa:hover ~ ul {
-        left: -40px;
+      /* .top > .fa:hover ~ ul { */
+        /* left: -40px; */
         /* border: 1px solid black; */
     }
       .top .fa .fa-bars {
@@ -361,6 +361,7 @@
 
       .top > .fa{
         display: block;
+        
     }
 
     main {

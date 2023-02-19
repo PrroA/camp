@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav class="top">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-bars " aria-hidden="true"  id="abc" onclick="openMenu()"></i>
         <a href="./index.html">
            
             <img src="./img/Index/Component 1.png" alt=""></a>
@@ -125,8 +125,11 @@
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        
          AOS.init();
-        var zd = document.querySelector(".arrow");
+
+
+        var zd = document.querySelector(".to-top");
         // 綁定點擊事件
         zd.addEventListener("click", function() {
         let time = setInterval(function() {
@@ -139,15 +142,22 @@
     }, 1000)
 })
 
+    let x = document.getElementById('abc')
+    x.addEventListener('click' , function (e){
+        console.log('qqqq');
+    })
+
+
             function openMenu(){
             let open = 0; // 關閉
             if(open == 0){
-                $(".top > .menu .fa .fa-bars").css("left", "-47px")
+                $(".top .menu").css("left", "-47px")
                 open = 1;
             }else{
-                $(".top > .menu .fa .fa-bars").css("left", "-500px")
+                $(".top .menu i").css("left", "-500px")
                 open = 0;
             }
+            console.log(openMenu());
         }
     
     </script>
