@@ -8,7 +8,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="./js/jquery-3.6.3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./jq/jquery-3.6.3.js" ></script>
     
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -25,6 +26,7 @@
             <li><a href="./qa.html">常見問題</a></li>
             <li><a href="./news.html">最新消息</a></li>
             <li><a href="./order.html">線上預約</a></li>
+            
         </ul>
     </nav>
 
@@ -126,7 +128,7 @@
          AOS.init();
         var zd = document.querySelector(".arrow");
         // 綁定點擊事件
-            zd.addEventListener("click", function() {
+        zd.addEventListener("click", function() {
         let time = setInterval(function() {
         let top = pageYOffset;
         let step = Math.ceil(top/50);
@@ -134,16 +136,16 @@
         if(top==0) {
             clearInterval(time);
         }
-    }, 10)
+    }, 1000)
 })
 
-        function openMenu(){
+            function openMenu(){
             let open = 0; // 關閉
             if(open == 0){
-                $(".fa-bars").css(".top > .menu", "left: -47px")
+                $(".top > .menu fa").css("left", "-47px")
                 open = 1;
             }else{
-                $(".fa-bars").css(".top > .menu", "left: -500px")
+                $(".top > .menu fa").css("left", "-500px")
                 open = 0;
             }
         }
